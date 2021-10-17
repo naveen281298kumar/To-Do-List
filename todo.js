@@ -71,12 +71,3 @@ function clearStore() {
     }
 }
 
-function clickit() {
-    let c=document.getElementById("clickit");
-    if(c.className==="collapse"){
-        c.className += "responisve"
-    }
-    else{
-        c.className="collaspe";
-    }
-}
