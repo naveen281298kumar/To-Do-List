@@ -71,3 +71,10 @@ function clearStore() {
     }
 }
 
+// hamburger menu
+const hamburger=document.getElementById("navbarSupportedContent");
+const navUl=document.getElementById("nav-ul");
+
+hamburger.addEventListener('click', () => {
+    navUl.classList.toggle('show');
+});

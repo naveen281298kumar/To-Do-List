@@ -4,7 +4,7 @@ h1{
     display: flex;
     justify-content: center;
     color: blue;
-    border: 2px solid blue;
+    border: 10px solid white;
     font-family: fantasy;
     border-radius: .2rem;
     margin:5rem 7rem 0 7rem;
@@ -19,9 +19,13 @@ main{
     font-weight: bold; 
 }
 h1:hover{
+    border-bottom: 10px solid blue;
      box-shadow: 0 0 .5rem .1rem;
 }
 @media screen and (max-width:700px) {
+  .navbar-nav.show {
+        display: flex;
+    }
     main{
         margin: .2rem;
     }

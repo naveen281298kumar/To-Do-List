@@ -1,0 +1,63 @@
+@media screen and (min-width:1000px) {
+    .nav-toggle-lable{
+        display: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px,1fr) 1fr;  
+    }
+    img{
+        grid-column: 1/2;
+       
+    }
+    .nav-header{
+        all: unset;
+        grid-column: 2/3;
+    }
+    .nav-li a{
+        opacity: 1;
+        text-decoration: none;
+        padding: .5rem;
+    }
+    .nav-ul{
+        display: flex;
+        margin: 1rem;
+        list-style: none;
+    }
+    form{
+        all: unset;
+        opacity: 1;
+        margin-top: .5rem;
+       margin-left: 10rem;
+       
+    }
+    input{
+        height: 2rem;
+    grid-column: 4/4;
+    width: 20rem;
+    border-radius: var(--search-rad);
+    }
+    button{
+        height: 2rem;
+        border-radius: var(--search-rad);
+    }
+
+}
+
+
+
+/* For very small screens */
+@media screen and (max-width:350px) {
+    form{
+        display: grid;
+    }
+    input{
+        width: 7rem;
+    }
+    button{
+        margin-top: 1rem;
+        max-width: 5rem;
+        /* position: relative;
+        left: 3rem; */
+    }
+}
